@@ -3,7 +3,7 @@
 insert into products
   ( id,
     name,
-    compagny_id,
+    company_id,
     description,
     picture,
     created_at,

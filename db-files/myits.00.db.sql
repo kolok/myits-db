@@ -18,7 +18,7 @@ create table users (
     deleted_at timestamp default null
 );
 
-create table compagnies (
+create table companies (
     id serial primary key,
     name varchar(255) default null,
     created_at timestamp not null,
@@ -27,17 +27,17 @@ create table compagnies (
     deleted_at timestamp default null
 );
 
-create table compagnies_users_roles (
+create table companies_users_roles (
     id serial primary key,
     user_id integer REFERENCES users(id),
-    compagny_id integer REFERENCES compagnies(id),
+    company_id integer REFERENCES companies(id),
     role roles default 'admin'
 );
 
 create table products (
     id serial primary key,
     name varchar(255) default null,
-    compagny_id integer REFERENCES compagnies(id),
+    company_id integer REFERENCES companies(id),
     description text default null,
     picture varchar(255) default null,
     created_at timestamp not null,
