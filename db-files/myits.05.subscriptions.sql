@@ -5,7 +5,7 @@ insert into subscriptions
     product_id,
     user_id,
     created_at,
-    update_at )
+    updated_at )
   values
   ( 1,
     1,

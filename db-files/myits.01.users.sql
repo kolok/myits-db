@@ -8,7 +8,7 @@ insert into users
     profile_picture,
     last_connected_at,
     created_at,
-    update_at,
+    updated_at,
     status,
     deleted_at )
   values

@@ -47,4 +47,5 @@ Execute following command from the base of the project
 * http://www.postgresqltutorial.com/
 * https://www.youtube.com/watch?v=jNq5EAb2biY&list=PLk1kxccoEnNEtwGZW-3KAcAlhI_Guwh8x
 
-
+Main Postgresql command:
+* https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546
