@@ -11,20 +11,20 @@ create table users (
     name varchar(255) default null,
     birthdate date default null,
     profile_picture varchar(255) default null,
-    last_connected_at timestamp default null,
-    created_at timestamp not null,
-    update_at timestamp not null,
+    last_connected_at timestamp with time zone default null,
+    created_at timestamp with time zone not null,
+    updated_at timestamp with time zone not null,
     status status default 'active',
-    deleted_at timestamp default null
+    deleted_at timestamp with time zone default null
 );
 
 create table companies (
     id serial primary key,
     name varchar(255) default null,
-    created_at timestamp not null,
-    update_at timestamp not null,
+    created_at timestamp with time zone not null,
+    updated_at timestamp with time zone not null,
     status status default 'active',
-    deleted_at timestamp default null
+    deleted_at timestamp with time zone default null
 );
 
 create table companies_users_roles (
@@ -40,25 +40,25 @@ create table products (
     company_id integer REFERENCES companies(id),
     description text default null,
     picture varchar(255) default null,
-    created_at timestamp not null,
-    update_at timestamp not null,
+    created_at timestamp with time zone not null,
+    updated_at timestamp with time zone not null,
     status status default 'active',
-    deleted_at timestamp default null
+    deleted_at timestamp with time zone default null
 );
 
 create table subscriptions (
     id serial primary key,
     product_id integer REFERENCES products(id),
     user_id integer REFERENCES users(id),
-    created_at timestamp not null,
-    update_at timestamp not null
+    created_at timestamp with time zone not null,
+    updated_at timestamp with time zone not null
 );
 
 create table tokens (
     id serial primary key,
     value varchar(255) default null,
     user_id integer REFERENCES users(id),
-    created_at timestamp not null,
-    update_at timestamp not null
+    created_at timestamp with time zone not null,
+    updated_at timestamp with time zone not null
 );
 

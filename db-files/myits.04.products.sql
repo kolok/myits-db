@@ -7,7 +7,7 @@ insert into products
     description,
     picture,
     created_at,
-    update_at,
+    updated_at,
     status,
     deleted_at )
   values

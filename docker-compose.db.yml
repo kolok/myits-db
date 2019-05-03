@@ -13,7 +13,7 @@ services:
 # opened port 5432 to be able to connect to the db using a postgresql client direct in a shell
 # Ex: psql -p 5432 -h 127.0.0.1 -U myits-user
 # Else, if the port is not opened you can use the "docker exec" command
-# docker exec -it technicalstackforbtocbusiness_db_1 psql -p 5432 -h 127.0.0.1 -U myits-user
+# docker exec -it myits-db psql -p 5432 -h 127.0.0.1 -U myits-user
 #    ports:
 #      - 5432:5432
     environment:

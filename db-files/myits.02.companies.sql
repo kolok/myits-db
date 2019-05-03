@@ -4,7 +4,7 @@ insert into companies
   ( id,
     name,
     created_at,
-    update_at,
+    updated_at,
     status,
     deleted_at )
   values
